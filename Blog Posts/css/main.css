@@ -1,0 +1,136 @@
+/*
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	margin: 0;
+	font-family: 'Noto Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.section-header {
+    margin-bottom: 86px;
+    text-align: center;
+}
+.section-header-title {
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: normal;
+    color: #000000;
+}
+.section-header p {
+    font-size: 14px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #999999;
+}
+/* Post */
+.posts-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.post {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    margin-bottom: 40px;
+	width: 570px;
+	height: 170px;
+}
+.post-content {
+    width: 370px;
+}
+.post-title {
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 20px;
+    color: #000000;
+}
+.post p {
+	margin-top: 0; 
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 130%;
+    color: #777777;
+}
+.read-more {
+    position: relative;
+    padding-right: 26px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+.read-more::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url('./../img/arrow.svg');
+}
+.post-img-wrapper {
+	flex-shrink: 0;
+	margin-right: 30px;
+}
+/* Button */
+.section-button-wrapper {
+    margin-top: 36px;
+    text-align: center;
+}
+.button {
+    display: inline-block;
+    padding-left: 51px;
+    padding-right: 51px;
+    height: 42px;
+    background: #FFFFFF;
+    border: 1px solid #F72464;
+    border-radius: 4px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #777777;
+    text-decoration: none;
+}
