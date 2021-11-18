@@ -14,9 +14,6 @@ html {
 body {
 	margin: 0;
 	font-family: 'Noto Sans', sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	height: 100%;
 }
 h1,
@@ -54,6 +51,7 @@ img {
     color: #000000;
 }
 .section-header p {
+    margin: 0;
     font-size: 14px;
     line-height: normal;
     text-transform: uppercase;
