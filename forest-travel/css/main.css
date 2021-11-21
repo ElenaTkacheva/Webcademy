@@ -7,6 +7,9 @@ font-family: 'Lobster', cursive;
 *::before {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     font-family: 'PT Sans', sans-serif;
@@ -71,6 +74,12 @@ ul {
 .header-nav-link {
     text-decoration: none;
     color: #FFFFFF;
+    transition: 0.5s;
+}
+.header-nav-link:hover {
+    color: #15361c;
+    text-shadow: 8px 8px 12px #FFFFFF, -8px -8px 12px #FFFFFF;
+    font-weight: 700;
 }
 .header-content {
     position: absolute;
@@ -79,12 +88,15 @@ ul {
     transform: translate(-50%, -50%);
     text-align: center;
     width: 1170px;
+    padding-top: 15px;
 }
 .header-title {
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 60px;
 }
 .header-content p {
+    margin: 0;
     font-size: 24px;
 }
 .header-scroll {
@@ -166,6 +178,11 @@ ul {
     text-align: center;
     color: #FFFFFF;
     text-decoration: none;
+    transition: 0.5s;
+}
+.button:hover {
+    background: #15361c;
+    box-shadow: 3px 10px 23px rgba(10, 102, 68, 0.35);
 }
 
 /* Footer */
@@ -178,9 +195,12 @@ ul {
 .footer a {
     color: #FFFFFF;
     text-decoration: none;
+    transition: 0.5s;
 }
 .footer a:hover {
     text-decoration: underline;
+    color: #15361c;
+    text-shadow: 5px 5px 10px #FFFFFF, -5px -5px 10px #FFFFFF;
 }
 .footer-row {
     display: flex;
@@ -188,6 +208,7 @@ ul {
 }
 .footer-widgets-wrapper {
     display: flex;
+    padding-top: 10px;
 }
 .footer-copyright {
     width: 270px;
