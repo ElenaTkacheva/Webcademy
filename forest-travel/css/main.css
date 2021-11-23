@@ -19,7 +19,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     margin: 0;
 }
 img {
@@ -35,6 +36,9 @@ ul {
 .container {
     width: 1170px;
     margin: 0 auto;
+}
+.bg-color {
+    background-color: #F2F8F6;
 }
 
 /* header */
@@ -268,6 +272,7 @@ ul {
 .card-link-wrapper {
     color: #FFFFFF;
     text-decoration: none;
+    transition: 0.3s;
 }
 .card-link-wrapper:hover {
     opacity: 0.6;
@@ -327,4 +332,94 @@ ul {
     font-size: 28px;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+/* Article page*/
+.row-article-page {
+    display: flex;
+    justify-content: space-between;
+}
+.article-page-nav {
+    width: 270px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.article-page-nav-title {
+    margin-bottom: 34px;
+    font-weight: 700;
+    font-size: 28px;
+    color: #31405B;
+}
+.article-page-nav-list {
+    font-size: 20px;
+    border-top: 1px solid #D6D9D8;
+}
+.article-page-nav-list li {
+    border-bottom: 1px solid #D6D9D8;
+}
+.article-page-nav-list a {
+    display: block;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: #138ECE;
+    text-decoration: none;
+}
+.article-page-nav-list a.active {
+    font-weight: 700;
+    color: #E04E4E;
+}
+.article-page-nav-list a:hover {
+    text-decoration: underline;
+}
+
+/* article-page-article */
+.article-page-article {
+    width: 770px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    color: #31405B;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.article-page-article h1,
+.article-page-article h2, 
+.article-page-article h3, 
+.article-page-article h4, 
+.article-page-article h5, 
+.article-page-article h6 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.article-page-article h1 {
+    margin-top: -6px;
+    margin-bottom: 40px;
+    font-size: 54px;
+}
+.article-page-article h2 {
+    font-size: 32px;
+}
+.article-page-article h3 {
+    font-size: 26px;
+}
+.article-page-article h4 {
+    font-size: 22px;
+}
+.article-page-article h5 {
+    font-size: 20px;
+}
+.article-page-article h6 {
+    font-size: 18px;
+}
+.article-page-article p {
+    margin-bottom: 15px;
+}
+.article-page-article a {
+    color: #138ECE;
+}
+.article-page-article img {
+    margin: 40px 0;
+}
+.article-page-article > *:last-child {
+    margin-bottom: 0;
 }
