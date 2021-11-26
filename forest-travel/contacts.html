@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Contacts</title>
+    <title>Контакты - агенство Форест Тревел</title>
+    <meta name="description" content="Турпоходы по дикой природе от туристического агенства Форест Тревел в Москве">
+    <meta name="keywords" content="турпоходы, лес, природа, турагенство, Форест Тревел">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +36,7 @@
                 <!-- contact info -->
                 <div class="contact-info">
                     <div class="contact-block">
-                        <h4 class="contact-block-title">Телефон и адрес</h4>
+                        <h3 class="contact-block-title">Телефон и адрес</h3>
                         <div class="contact-block-body">
                             <ul class="contact-list">
                                 <li class="contact-list-icon phone"><a href="tel:+79055555555">+7 (905) 555-55-55</a></li>
@@ -44,7 +46,7 @@
                         </div>
                     </div>
                     <div class="contact-block">
-                        <h4 class="contact-block-title">Карта</h4>
+                        <h3 class="contact-block-title">Карта</h3>
                         <div class="contact-block-body">
                             <!-- <img src="./img/contacts/map.jpg" alt="Карта"> -->
                             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A942db69b6ecfc37ced292ba3c228fc17178d6e7793a765eafb630667ecc176c6&amp;width=470&amp;height=345&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -56,8 +58,8 @@
                 <form class="form">
                     <h3 class="form-title">Заявка на подбор тура</h3>
                     <!-- form-group-->
-                    <div class="form-group">
-                        <div class="form-group-title">Личные данные</div>
+                    <fieldset class="form-group">
+                        <legend class="form-group-title">Личные данные</legend>
                         <div class="form-group-row">
                             <input class="input" type="text" placeholder="Введите имя" required>
                         </div>
@@ -65,11 +67,11 @@
                             <input class="input" type="tel" placeholder="Телефон" required>
                             <input class="input" type="email" placeholder="Email" required>
                         </div>
-                    </div>
+                    </fieldset>
                     <!-- // form-group-->
                     <!-- form-group-->
-                    <div class="form-group">
-                        <div class="form-group-title">Количество человек для тура</div>
+                    <fieldset class="form-group">
+                        <legend class="form-group-title">Количество человек для тура</legend>
                         <label class="radio-row">
                             <input name="number-of-people" class="real-radio" type="radio">
                             <span class="custom-radio"></span>
@@ -85,11 +87,11 @@
                             <span class="custom-radio"></span>
                             <span>11 человек и более</span>
                         </label>                        
-                    </div>
+                    </fieldset>
                     <!-- // form-group-->
                     <!-- form-group-->
-                    <div class="form-group">
-                        <div class="form-group-title">Какие направления вам интересны</div>
+                    <fieldset class="form-group">
+                        <legend class="form-group-title">Какие направления вам интересны</legend>
                         <label class="checkbox-row">
                             <input name="tours" class="real-checkbox" type="checkbox">
                             <span class="custom-checkbox"></span>
@@ -110,7 +112,7 @@
                             <span class="custom-checkbox"></span>
                             <span>Комбинированные: море, горы, города, лес.</span>
                         </label>
-                    </div>
+                    </fieldset>
                     <!-- // form-group-->
                     <input class="button" type="submit" value="Отправить заявку">
                 </form>
@@ -129,7 +131,7 @@
                 </div>
                 <div class="footer-widgets-wrapper">
                     <div class="footer-widget footer-widget-info">
-                        <h4 class="footer-widget-title">Информация</h4>
+                        <h3 class="footer-widget-title">Информация</h3>
                         <ul class="footer-widget-list">
                             <li><a href="#">Главная</a></li>
                             <li><a href="#">О компании</a></li>
@@ -138,7 +140,7 @@
                         </ul>
                     </div>
                     <div class="footer-widget footer-widget-services">
-                        <h4 class="footer-widget-title">Услуги</h4>
+                        <h3 class="footer-widget-title">Услуги</h3>
                         <ul class="footer-widget-list">
                             <li><a href="#">Бесплатные туры</a></li>
                             <li><a href="#">Невероятные приключения</a></li>
@@ -148,7 +150,7 @@
                         </ul>
                     </div>
                     <div class="footer-widget footer-widget-contacts">
-                        <h4 class="footer-widget-title">Контакты</h4>
+                        <h3 class="footer-widget-title">Контакты</h3>
                         <p><a href="tel: +79055555555">+7 (905) 555-55-55</a></p>
                         <p><a href="mailto: info@foresttravel.com">info@foresttravel.com</a></p>
                         <p><a>г. Москва, Рязанский проспект 54, офис 112.</a></p>

@@ -8,12 +8,19 @@ font-family: 'Lobster', cursive;
     box-sizing: border-box;
 }
 html {
+    height: 100%; /* sticky footer */
     scroll-behavior: smooth;
 }
 body {
+    height: 100%; /* sticky footer */
+    display: flex; /* sticky footer */
+    flex-direction: column;  /* sticky footer */
     margin: 0;
     font-family: 'PT Sans', sans-serif;
     color: #31405B;
+}
+body > * {
+    flex-shrink: 0; /* sticky footer */
 }
 input {
     font-family: 'PT Sans', sans-serif;
@@ -77,6 +84,18 @@ ul {
 .button:hover {
     background: #15361c;
     box-shadow: 3px 10px 23px rgba(10, 102, 68, 0.35);
+}
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+legend {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
 }
 
 /* header */
@@ -216,6 +235,7 @@ ul {
 
 /* Footer */
 .footer {
+    margin-top: auto; /* sticky footer */
     padding-top: 70px;
     padding-bottom: 90px;
     background-color: #265847;
@@ -459,7 +479,7 @@ ul {
     margin-top: 40px;
 }
 .contact-block-title {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     font-weight: 700;
     font-size: 28px;
 }
@@ -467,7 +487,7 @@ ul {
     font-size: 20px;
 }
 .contact-list li {
-    margin-bottom: 15px;
+    margin-bottom: 22px;
 }
 .contact-list a {
     color: #138ECE;
@@ -563,7 +583,7 @@ ul {
     display: inline-block;
     vertical-align: bottom;
     flex-shrink: 0;
-    margin-right: 10px;
+    margin-right: 15px;
     width: 20px;
     height: 20px;
     background: #EEEEEE;
@@ -593,7 +613,7 @@ ul {
 .checkbox-row {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     font-size: 18px;
 }
 .real-checkbox {
@@ -609,7 +629,7 @@ ul {
     display: inline-block;
     vertical-align: bottom;
     flex-shrink: 0;
-    margin-right: 10px;
+    margin-right: 15px;
     width: 20px;
     height: 20px;
     background-color: #EEEEEE;
@@ -635,3 +655,33 @@ ul {
     transform: translate(-50%, -50%) scale(1);
 }
 
+/* UI */
+.ui {
+    padding: 40px;
+}
+.ui-header {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+.ui-header-2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+ul.ui-list {
+    font-size: 18px;
+    padding-left: 25px;
+}
+ul.ui-list li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+ul.ui-list a {
+    color: #138ECE;
+    transition: 0.2s;
+}
+ul.ui-list a:hover {
+    text-decoration: none;
+    color: #15361c;
+    font-weight: 700;
+    font-size: 22px;
+}
