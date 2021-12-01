@@ -48,8 +48,10 @@ ul {
     list-style-type: none;
 }
 .container {
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .bg-color {
     background-color: #F2F8F6;
@@ -136,6 +138,9 @@ legend {
     font-size: 22px;
     color: #FFFFFF;
 }
+.header-nav-button {
+    display: none;
+}
 .header-nav-list {
     display: flex;
 }
@@ -165,6 +170,7 @@ legend {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 60px;
+    line-height: 1;
 }
 .header-content p {
     margin: 0;
@@ -685,3 +691,5 @@ ul.ui-list a:hover {
     font-weight: 700;
     font-size: 22px;
 }
+
+
