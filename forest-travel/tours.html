@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Туры -  агенство Форест Тревел</title>
     <meta name="description" content="Турпоходы по дикой природе от туристического агенства Форест Тревел в Москве">
     <meta name="keywords" content="турпоходы, лес, природа, турагенство, Форест Тревел">
+    <meta property="og:url" content="https://webcademy.ru/test/forest-travel/main.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Туристическое агентство Форест Тревел" />
+    <meta property="og:description" content="Турпоходы по дикой природе"/>
+    <meta property="og:image" content="https://elenatkacheva.github.io/Webcademy/forest-travel/img/opengraph.jpg"/>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -24,10 +30,13 @@
                     <li class="header-nav-list-item"><a class="header-nav-link" href="#">Галерея</a></li>
                     <li class="header-nav-list-item"><a class="header-nav-link" href="#">Контакты</a></li>
                 </ul>
+                <button class="header-nav-button">
+                    <img src="./img/header/menu.svg" alt="Menu button">
+                </button>
             </nav>
         </div>
     </header>
-    <main class="inner-page">
+    <main class="inner-page tours">
         <div class="container">
             <div class="inner-page-tours-header">
                 <h1 class="main-header">Туры и направления</h1>
@@ -37,7 +46,12 @@
                 <div class="cards-first-row">
                     <a href="#" class="card-link-wrapper">
                         <div class="card-1">
-                            <img src="./img/cards/card-1.jpg" alt="Бесплатные туры">
+                            <picture>
+                                <source media="(max-width: 599px)" srcset="./img/cards-mobile-xs/card1.jpg">
+                                <source media="(max-width: 899px)" srcset="./img/cards-mobile/card1.jpg">
+                                <source media="(max-width: 1199px)" srcset="./img/cards-tablet/card1.jpg">
+                                <img src="./img/cards/card-1.jpg" alt="Бесплатные туры">
+                            </picture>
                             <div class="card-title-wrapper">
                                 <h2 class="card-title">Бесплатные туры</h2>
                             </div>
@@ -45,7 +59,12 @@
                     </a>
                     <a href="#" class="card-link-wrapper">
                         <div class="card-2">
-                            <img src="./img/cards/card-2.jpg" alt="Экстремальный отдых">
+                            <picture>
+                                <source media="(max-width: 599px)" srcset="./img/cards-mobile-xs/card2.jpg">
+                                <source media="(max-width: 899px)" srcset="./img/cards-mobile/card2.jpg">
+                                <source media="(max-width: 1199px)" srcset="./img/cards-tablet/card2.jpg">
+                                <img src="./img/cards/card-2.jpg" alt="Экстремальный отдых">
+                            </picture>
                             <div class="card-title-wrapper sand-color">
                                 <h2 class="card-title">Экстремальный отдых</h2>
                             </div>
@@ -56,7 +75,12 @@
                     <div class="cards-second-row-column">
                         <a href="#" class="card-link-wrapper">
                             <div class="card-3">
-                                <img src="./img/cards/card-3.jpg" alt="Невероятные приключения">
+                                <picture>
+                                    <source media="(max-width: 599px)" srcset="./img/cards-mobile-xs/card3.jpg">
+                                    <source media="(max-width: 899px)" srcset="./img/cards-mobile/card3.jpg">
+                                    <source media="(max-width: 1199px)" srcset="./img/cards-tablet/card3.jpg">
+                                    <img src="./img/cards/card-3.jpg" alt="Невероятные приключения">
+                                </picture>
                                 <div class="card-title-wrapper water-color">
                                     <h2 class="card-title">Невероятные приключения</h2>
                                 </div>
@@ -64,7 +88,12 @@
                         </a>
                         <a href="#" class="card-link-wrapper">
                             <div class="card-4">
-                                <img src="./img/cards/card-4.jpg" alt="Трекинг походы">
+                                <picture>
+                                    <source media="(max-width: 599px)" srcset="./img/cards-mobile-xs/card4.jpg">
+                                    <source media="(max-width: 899px)" srcset="./img/cards-mobile/card4.jpg">
+                                    <source media="(max-width: 1199px)" srcset="./img/cards-tablet/card4.jpg">
+                                    <img src="./img/cards/card-4.jpg" alt="Трекинг походы">
+                                </picture>
                                 <div class="card-title-wrapper mount-color">
                                     <h2 class="card-title">Трекинг походы</h2>
                                 </div>
@@ -74,7 +103,12 @@
                     <div class="cards-second-row-column">
                         <a href="#" class="card-link-wrapper">
                             <div class="card-5">
-                                <img src="./img/cards/card-5.jpg" alt="Экзотические джунгли">
+                                <picture>
+                                    <source media="(max-width: 599px)" srcset="./img/cards-mobile-xs/card5.jpg">
+                                    <source media="(max-width: 899px)" srcset="./img/cards-mobile/card5.jpg">
+                                    <source media="(max-width: 1199px)" srcset="./img/cards-tablet/card5.jpg">
+                                    <img src="./img/cards/card-5.jpg" alt="Экзотические джунгли">
+                                </picture>
                                 <div class="card-title-wrapper jungle-color">
                                     <h2 class="card-title">Экзотические джунгли</h2>
                                 </div>

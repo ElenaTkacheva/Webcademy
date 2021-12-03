@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Контакты - агенство Форест Тревел</title>
     <meta name="description" content="Турпоходы по дикой природе от туристического агенства Форест Тревел в Москве">
     <meta name="keywords" content="турпоходы, лес, природа, турагенство, Форест Тревел">
+    <meta property="og:url" content="https://webcademy.ru/test/forest-travel/main.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Туристическое агентство Форест Тревел" />
+    <meta property="og:description" content="Турпоходы по дикой природе"/>
+    <meta property="og:image" content="https://elenatkacheva.github.io/Webcademy/forest-travel/img/opengraph.jpg"/>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -24,10 +30,13 @@
                     <li class="header-nav-list-item"><a class="header-nav-link" href="#">Галерея</a></li>
                     <li class="header-nav-list-item"><a class="header-nav-link" href="#">Контакты</a></li>
                 </ul>
+                <button class="header-nav-button">
+                    <img src="./img/header/menu.svg" alt="Menu button">
+                </button>
             </nav>
         </div>
     </header>
-    <main class="inner-page">
+    <main class="inner-page contacts">
         <div class="container">
             <div class="contacts-header">
                 <h1 class="main-header">Контактная информация</h1>
@@ -37,19 +46,22 @@
                 <div class="contact-info">
                     <div class="contact-block">
                         <h3 class="contact-block-title">Телефон и адрес</h3>
-                        <div class="contact-block-body">
+                        <div class="contact-block-body first">
                             <ul class="contact-list">
                                 <li class="contact-list-icon phone"><a href="tel:+79055555555">+7 (905) 555-55-55</a></li>
                                 <li class="contact-list-icon email"><a href="mailto:info@foresttravel.com">info@foresttravel.com</a></li>
                                 <li class="contact-list-icon address">г. Москва, Рязанский проспект 54, офис 112.</li>
-                            </ul>                                            
+                            </ul> 
+                            <button class="header-nav-button">
+                                <img src="./img/header/menu.svg" alt="Menu button">
+                            </button>
                         </div>
                     </div>
                     <div class="contact-block">
                         <h3 class="contact-block-title">Карта</h3>
                         <div class="contact-block-body">
                             <!-- <img src="./img/contacts/map.jpg" alt="Карта"> -->
-                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A942db69b6ecfc37ced292ba3c228fc17178d6e7793a765eafb630667ecc176c6&amp;width=470&amp;height=345&amp;lang=ru_RU&amp;scroll=true"></script>
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A942db69b6ecfc37ced292ba3c228fc17178d6e7793a765eafb630667ecc176c6&amp;width=470%;height=345%;lang=ru_RU&amp;scroll=true" ></script>
                         </div>
                     </div>
                 </div>
