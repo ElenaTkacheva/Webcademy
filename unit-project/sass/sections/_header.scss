@@ -1,0 +1,63 @@
+.header {
+    position: relative;
+    height: 870px;
+
+    @include bgImage("./../img/bg/header-bg.jpg");
+
+    &::before {
+        @extend %overlay;
+    }
+}
+.header__wrapper {
+    position: absolute;
+    padding-top: 60px;
+    color: #FFFFFF;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.header__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.header__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.header__title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1;
+}
+.header__desc {
+    font-weight: 700;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 1.2;
+    max-width: 730px;
+
+    p {
+        margin-bottom: 15px;
+    }
+}
+.header__form {
+    display: flex;
+    justify-content: center;
+}
+.header__form > * + * {
+    margin-left: 20px;
+}
+.header__scroll {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
