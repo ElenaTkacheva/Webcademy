@@ -22,6 +22,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #FFFFFF;
+    transition: 0.3s;
 
     &:last-child {
         margin-right: 0;
@@ -43,6 +44,7 @@
     height: 48px;
     background: rgba(196, 196, 196, 0.1);
     border-radius: 50%;
+    transition: 0.3s;
 
     &:last-child {
         margin-right: 0;

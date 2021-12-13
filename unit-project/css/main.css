@@ -139,6 +139,7 @@ legend {
   top: 50%;
   left: 50%;
   text-align: center;
+  padding-bottom: 35px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -212,6 +213,7 @@ legend {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
+  transition: 0.3s;
 }
 .footer__nav-item:last-child {
   margin-right: 0;
@@ -237,6 +239,7 @@ legend {
   height: 48px;
   background: rgba(196, 196, 196, 0.1);
   border-radius: 50%;
+  transition: 0.3s;
 }
 .footer__social-item:last-child {
   margin-right: 0;
@@ -330,6 +333,7 @@ legend {
 
 .section-tasks__content {
   width: 570px;
+  padding-top: 10px;
 }
 
 .section-tasks__title {
@@ -446,7 +450,7 @@ legend {
 .section-clients__slider {
   margin-left: auto;
   margin-right: auto;
-  width: 770px;
+  width: 765px;
 }
 
 .button-round {
@@ -461,6 +465,7 @@ legend {
   border-radius: 50%;
   background-color: #fff;
   border: none;
+  transition: 0.3s;
 }
 
 .button-round:hover {
@@ -480,6 +485,7 @@ legend {
   font-size: 14px;
   line-height: 60px;
   color: #FFFFFF;
+  transition: 0.3s;
 }
 
 .input::-webkit-input-placeholder {
@@ -504,6 +510,7 @@ legend {
 }
 
 .button {
+  display: inline-block;
   padding-left: 40px;
   padding-right: 40px;
   height: 60px;
@@ -515,8 +522,10 @@ legend {
   line-height: 60px;
   letter-spacing: 4px;
   text-transform: uppercase;
+  text-decoration: none;
   color: #FFFFFF;
   cursor: pointer;
+  transition: 0.3s;
 }
 .button:hover {
   background: #015833;
@@ -674,6 +683,7 @@ legend {
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
+  transition: 0.3s;
 }
 .button-outline:hover {
   background: rgba(255, 255, 255, 0.2);
@@ -698,6 +708,7 @@ legend {
   text-transform: uppercase;
   color: #2E2E2E;
   cursor: pointer;
+  transition: 0.3s;
 }
 .button-solid:hover {
   background: #000000;
@@ -752,7 +763,7 @@ legend {
 }
 
 .slider-item__text {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   font-weight: 500;
   font-size: 18px;
   line-height: 2;
