@@ -8,6 +8,28 @@
     &::before {
         @extend %overlay;
     }
+
+    /* Desktop Medium */
+    @media (max-width: 1600px) {
+        @include bgImage("./../img/bg/cta.jpg");
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @include bgImage("./../img/bg/cta-tablet.jpg");
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        @include bgImage("./../img/bg/cta-mobile.jpg");
+    }
+
+    /* Mobile XS*/
+    @media (max-width: 599px) {
+        @include bgImage("./../img/bg/cta-mobilexs.jpg");
+    }
 }
 .section-cta__content {
     position: relative;
@@ -24,5 +46,17 @@
     span {
         text-transform: uppercase;
         font-weight: 700;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    /* Mobile XS*/
+    @media (max-width: 599px) {
+        margin-bottom: 20px;
+        font-size: 18px;
     }
 }

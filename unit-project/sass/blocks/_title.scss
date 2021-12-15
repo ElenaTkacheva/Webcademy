@@ -5,4 +5,9 @@
     letter-spacing: 4px;
     text-transform: uppercase;
     color: $accentText;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        font-size: 14px;
+    }
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit Project - Task Manager</title>
     <meta name="description" content="Task Manager" />
-	<meta name="keywords" content="ключевые слова, фразы" />
+	<meta name="keywords" content="Task Manager" />
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,7 @@
 <body>
     <header class="header">
         <div class="header__wrapper">
-            <div class="container header__buttons">
+            <div class="header__buttons">
                 <button class="button-round">
                     <img src="./img/header/menu.svg" alt="Menu button">
                 </button>
@@ -45,8 +45,8 @@
                     <p>Управляй задачами и проектами из любой точки вместе с ЮНИТ. Дома. На работе. В дороге. Онлайн. Оффлайн.</p>
                 </div>
                 <form class="header__form">
-                    <input type="text" class="input" placeholder="Ваше имя">
-                    <input type="email" class="input" placeholder="Email">
+                    <input type="text" class="header__form-input input" placeholder="Ваше имя">
+                    <input type="email" class="header__form-input input" placeholder="Email">               
                     <button type="submit" class="button">начать триал</button>
                 </form>
             </div>
@@ -208,6 +208,13 @@
                     <button class="slider__arrow slider__arrow--right">
                         <img src="./img/feather-icon/arrow-right.svg" alt="Arrow right">
                     </button>
+                    <div class="slider__pagination">
+                        <button class="slider__pagination-item"></button>
+                        <button class="slider__pagination-item slider__pagination-item--active"></button>
+                        <button class="slider__pagination-item"></button>
+                        <button class="slider__pagination-item"></button>
+                        <button class="slider__pagination-item"></button>
+                    </div>
                     <div class="slider-item">
                         <div class="slider-item__text">
                             <p>Это потрясающее приложение которое помогло мне завершить все мои дела, и сделать дипломный проект раньше срока.</p>
