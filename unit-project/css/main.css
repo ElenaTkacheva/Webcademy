@@ -664,7 +664,7 @@ legend {
 @media (max-width: 599px) {
   .section-tasks {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
   }
 }
 
@@ -688,6 +688,7 @@ legend {
   .section-tasks__row {
     padding-left: 0;
     flex-direction: row-reverse;
+    align-items: flex-start;
   }
 }
 @media (max-width: 599px) {
@@ -827,7 +828,7 @@ legend {
 @media (max-width: 599px) {
   .section-focus {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
   }
 }
 
