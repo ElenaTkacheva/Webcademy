@@ -69,18 +69,20 @@
     /* Tablet */
     @media (max-width: 1199px) {
         width: 420px;
-        padding-top: 12px;
+        padding-top: 20px;
     }
 
     /* Mobile */
     @media (max-width: 899px) {
         width: 370px;
+        padding-top: 0;
     }
 
     /* Mobile XS*/
     @media (max-width: 599px) {
         width: 100%;
         text-align: center;
+        padding-top: 10px;
     }
 }
 .section-focus__header {

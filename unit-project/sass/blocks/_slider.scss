@@ -25,6 +25,10 @@
         transform: translateX(-100%);
         @media (max-width: 949px) {
             left: -30px;
+            /* Mobile */
+            @media (max-width: 899px) {
+                top: 60px;
+            }
         }
     }
 
@@ -34,6 +38,10 @@
         transform: translateX(100%);
         @media (max-width: 949px) {
             right: -30px;
+            /* Mobile */
+            @media (max-width: 899px) {
+                top: 60px;
+            }
         }
     }
 
@@ -89,7 +97,7 @@
     /* Mobile */
     @media (max-width: 899px) {
         font-size: 16px;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
 
     /* Mobile XS*/

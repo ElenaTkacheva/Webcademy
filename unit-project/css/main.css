@@ -366,7 +366,7 @@ legend {
 @media (max-width: 899px) {
   .footer__row {
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 }
 @media (max-width: 599px) {
@@ -557,13 +557,13 @@ legend {
 @media (max-width: 899px) {
   .section-functional__row > * {
     width: 270px;
-    margin-top: 30px;
+    margin-top: 32px;
   }
 }
 @media (max-width: 599px) {
   .section-functional__row > * {
     width: 290px;
-    margin-top: 40px;
+    margin-top: 43px;
   }
 }
 
@@ -710,17 +710,20 @@ legend {
 @media (max-width: 1199px) {
   .section-tasks__content {
     width: 495px;
+    padding-top: 0;
   }
 }
 @media (max-width: 899px) {
   .section-tasks__content {
     width: 270px;
+    padding-top: 5px;
   }
 }
 @media (max-width: 599px) {
   .section-tasks__content {
     text-align: center;
     width: 100%;
+    padding-top: 0;
   }
 }
 
@@ -889,18 +892,20 @@ legend {
 @media (max-width: 1199px) {
   .section-focus__content {
     width: 420px;
-    padding-top: 12px;
+    padding-top: 20px;
   }
 }
 @media (max-width: 899px) {
   .section-focus__content {
     width: 370px;
+    padding-top: 0;
   }
 }
 @media (max-width: 599px) {
   .section-focus__content {
     width: 100%;
     text-align: center;
+    padding-top: 10px;
   }
 }
 
@@ -1199,6 +1204,18 @@ legend {
   line-height: 60px;
   color: #FFFFFF;
   transition: 0.3s;
+  /* Mobile */
+  /* Mobile XS*/
+}
+@media (max-width: 899px) {
+  .input {
+    padding-left: 45px;
+  }
+}
+@media (max-width: 599px) {
+  .input {
+    padding-left: 35px;
+  }
 }
 
 .input::placeholder {
@@ -1303,7 +1320,8 @@ legend {
 @media (max-width: 1199px) {
   .card__title {
     margin-bottom: 10px;
-    min-height: 32px;
+    min-height: 48px;
+    line-height: 1.5;
   }
 }
 @media (max-width: 899px) {
@@ -1494,8 +1512,15 @@ legend {
 @media (max-width: 949px) {
   .slider__arrow--left {
     left: -30px;
+    /* Mobile */
   }
 }
+@media (max-width: 949px) and (max-width: 899px) {
+  .slider__arrow--left {
+    top: 60px;
+  }
+}
+
 .slider__arrow--right {
   top: 53px;
   right: -46px;
@@ -1504,8 +1529,15 @@ legend {
 @media (max-width: 949px) {
   .slider__arrow--right {
     right: -30px;
+    /* Mobile */
   }
 }
+@media (max-width: 949px) and (max-width: 899px) {
+  .slider__arrow--right {
+    top: 60px;
+  }
+}
+
 @media (max-width: 599px) {
   .slider__arrow {
     display: none;
@@ -1564,7 +1596,7 @@ legend {
 @media (max-width: 899px) {
   .slider-item__text {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 }
 @media (max-width: 599px) {

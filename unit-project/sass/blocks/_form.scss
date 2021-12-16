@@ -11,6 +11,16 @@
     line-height: 60px;
     color: #FFFFFF;
     transition: 0.3s;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding-left: 45px;
+    }
+
+    /* Mobile XS*/
+    @media (max-width: 599px) {
+        padding-left: 35px;
+    }
 }
 .input::placeholder {
     color: #FFFFFF;

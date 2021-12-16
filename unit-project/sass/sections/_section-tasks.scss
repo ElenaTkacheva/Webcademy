@@ -54,17 +54,20 @@
     /* Tablet */
     @media (max-width: 1199px) {
         width: 495px;
+        padding-top: 0;
     }
 
     /* Mobile */
     @media (max-width: 899px) {
         width: 270px;
+        padding-top: 5px;
     }
 
     /* Mobile XS*/
     @media (max-width: 599px) {
         text-align: center;
         width: 100%;
+        padding-top: 0;
     }
 }
 .section-tasks__title {
