@@ -23,8 +23,14 @@
 @import "./blocks/package";
 @import "./blocks/button-outline";
 @import "./blocks/button-solid";
+@import "./blocks/nav-icon";
+@import "./blocks/nav";
 @import "./blocks/slider";
+@import "./blocks/search";
 
+// owlCarousel Theme
+@import "./owlCarousel/vars";
+@import "./owlCarousel/theme";
 
 // Media 
 @import "./media/media"
