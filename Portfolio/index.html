@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>Portfolio</title>
+		<meta name="description" content="Описание страницы" />
+		<meta name="keywords" content="ключевые слова, фразы" />
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+		<!-- Open Graph -->
+		<!-- <meta property="og:url" content="" /> -->
+		<!-- <meta property="og:type" content="website" />
+		<meta property="og:title" content="Туристическое агентство Форест Тревел" />
+		<meta property="og:description" content="Турпоходы по дикой природе" />
+		<meta property="og:image" content="./img/opengraph.jpg"/> -->
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#1a60cf">
+		<link rel="shortcut icon" href="./img/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+
+		<header class="header">
+			<div class="container header__wrapper">
+				<!-- Навигация -->
+				<nav class="nav">
+					<ul class="nav__list">
+						<li><a href="#">Навыки</a></li>
+						<li><a href="#">Портфолио</a></li>
+						<li><a href="#">Как я работаю</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="header__icons">
+					<a href="#"><img src="./img/icons/linkedin.svg" alt="linkedin"></a>
+					<a href="#"><img src="./img/icons/github.svg" alt="github"></a>
+				</div>
+			</div>
+			<div class="container header__content">
+				<div class="header__content-desc">
+					<h1 class="title1 gradient-line">Елена <br> Ткачева</h1>
+					<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ. </p>
+					<div class="header__buttons">
+						<a href="#about" class="button">Познакомиться</a>
+						<a class="button button-contact">Контакты</a>
+					</div>
+				</div>
+				<div class="header__content-img">
+					<img class="content-img" src="./img/header/header-img.jpg" alt="Работа верстальщика">
+				</div>
+			</div>
+			<div class="header__img">
+				<img class="image" src="./img/header/header-bg.png" alt="background image">
+			</div>
+			
+		</header>
+		<section class="section__about" id="about">
+			<div class="container">
+				<div class="section__about-row">
+					<div class="section__about-skills">
+						<div class="section__about-title">
+							<h3 class="title3">Что я умею:</h3>
+						</div>
+						<ul class="section__about-list">
+							<li>pixel perfect, полное соответствие макету</li>
+							<li>верстаю с сеткой или без</li>
+							<li>адаптивная верстка под мобильные устройства</li>
+							<li>оптимизация по retina экраны</li>
+							<li>с Bootstrap и без него</li>
+						</ul>
+					</div>
+					<div class="section__about-social">
+						<div class="section__about-title">
+							<h3 class="title3">На связи:</h3>
+						</div>
+						<div class="social-icons">
+							<a href="#"><img class="icons" src="./img/icons/telegram.svg" alt="telegram"></a>
+							<a href="#"><img class="icons" src="./img/icons/vk.svg" alt="vk"></a>
+							<a href="#"><img class="icons" src="./img/icons/facebook.svg" alt="facebook"></a>
+							<a href="#"><img class="icons" src="./img/icons/instagram.svg" alt="instagram"></a>
+							<a href="#"><img class="icons" src="./img/icons/whatsapp.svg" alt="whatsapp"></a>
+						</div>
+						<div class="social-email">
+							<p><a class="email" href="mailto:echelysheva@yahoo.ca">echelysheva@yahoo.ca</a></p> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section__portfolio">
+			<div class="container">
+				<div class="section__portfolio-title">
+					<h2 class="title2 gradient-line">Портфолио</h2>
+				</div>
+				<div class="section__portfolio-cards">
+					<div class="cards-row">
+						<div class="project-card card-big">
+							<img src="./img/portfolio/card1.jpg" alt="Многостраничный сайт" class="project-card__img">
+							<h4 class="title4">Верстка “Форест тревел”</h4>
+							<p class="project-card__desc">Верстка многостраничного сайта</p>
+						</div>
+						<div class="project-card card-big">
+							<img src="./img/portfolio/card2.jpg" alt="Лендинг" class="project-card__img">
+							<h4 class="title4">Сайт приложения “Юнит”</h4>
+							<p class="project-card__desc">Верстка лендинга</p>
+						</div>
+					</div>
+					<div class="cards-row">
+						<div class="project-card">
+							<img src="./img/portfolio/card3.jpg" alt="Многостраничный сайт" class="project-card__img">
+							<h4 class="title4">Верстка “Мир Авто”</h4>
+							<p class="project-card__desc">Верстка многостраничного сайта</p>
+						</div>
+						<div class="project-card">
+							<img src="./img/portfolio/card4.jpg" alt="Многостраничный сайт" class="project-card__img">
+							<h4 class="title4">Верстка “Мир Авто”</h4>
+							<p class="project-card__desc">Верстка многостраничного сайта</p>
+						</div>
+						<div class="project-card">
+							<img src="./img/portfolio/card5.jpg" alt="Многостраничный сайт" class="project-card__img">
+							<h4 class="title4">Верстка “Мир Авто”</h4>
+							<p class="project-card__desc">Верстка многостраничного сайта</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section__timeline">
+			<div class="container"> 
+				<div class="section__timeline-title">
+					<h2 class="title2 gradient-line">Как я работаю</h2>
+				</div>
+				<div class="timeline">
+					<div class="timeline-item">
+						<h5 class="title5 gradient-line">Оцениваю макет</h5>
+						<p class="timeline-item__desc">Оцениваю объем работы, сложность, <br>нюансы. Задаю вопросы.</p>
+						<p class="timeline-item__time">Время: 2 часа</p>
+					</div>
+					<div class="timeline-item">
+						<h5 class="title5 gradient-line">ТЗ, смета и график работ</h5>
+						<p class="timeline-item__desc">Согласовываем техническое задание и <br>график работ по проекту. Осмечиваю<br> стоимость по этапам работы.</p>
+						<p class="timeline-item__time">Время: 2 - 4 часа</p>
+					</div>
+					<div class="timeline-item">
+						<h5 class="title5 gradient-line">Вы держите руку на пульсе</h5>
+						<p class="timeline-item__desc">Выдаю клиенту доступ к GitHub репозиторию и <br>доске Trello. Вы в любое время можете видеть <br>актуальное состояние проекта и задач.</p>
+					</div>
+					<div class="timeline-item">
+						<h5 class="title5 gradient-line">Выполняю каждый этап</h5>
+						<p class="timeline-item__desc">Поочередно выполняю каждый этап <br>работы. Передаю результаты. Заказчик <br>производит поэтапную оплату.</p>
+					</div>
+					<div class="timeline-item">
+						<h5 class="title5 gradient-line">Финальное ревью проекта</h5>
+						<p class="timeline-item__desc">Проект готов. Финальное ревью и полировка до <br>идеального состояния. Передаю файлы проекта, <br>заливаю сайт на хостинг заказчика.</p>
+						<p class="timeline-item__time">Время: 2 - 4 часа</p>
+					</div>
+				</div>
+			</div> 
+		</section>
+		<section class="section__contacts">
+			<div class="container">
+				<div class="section__contacts-title">
+					<h2 class="title2 gradient-line">Контакты</h2>
+				</div>
+				<div class="section__contacts-row">
+					<div class="row__left">
+						<div class="row__left-list">
+							<ul>
+								<li class="row__left-item">
+									<p>Email</p>
+									<a class="email" href="mailto:echelysheva@yahoo.ca">echelysheva@yahoo.ca</a>
+								</li>
+								<li class="row__left-item">
+									<p>Телефон</p>
+									<a class="phone" href="tel:+79801234567">+7 (980) 123-45-67</a>
+								</li>
+							</ul>
+						</div>
+						<div class="social-icons">
+							<a href="#"><img class="icons" src="./img/icons/telegram.svg" alt="telegram"></a>
+							<a href="#"><img class="icons" src="./img/icons/vk.svg" alt="vk"></a>
+							<a href="#"><img class="icons" src="./img/icons/facebook.svg" alt="facebook"></a>
+							<a href="#"><img class="icons" src="./img/icons/instagram.svg" alt="instagram"></a>
+							<a href="#"><img class="icons" src="./img/icons/whatsapp.svg" alt="whatsapp"></a>
+						</div>
+					</div>
+					<div class="row__right">
+						<p>Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом —  напишите мне.
+						</p>
+					</div>
+				</div>
+				<div class="section__contacts-img">
+					<img src="./img/contact.svg" alt="Picture">
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__copyright">
+					<p>&#169; 2022 — Елена Ткачева</p>
+				</div>
+				<div class="footer__desc">
+					<p>Веб-разработчик из Монреаля, занимаюсь версткой и созданием сайтов.<br>Этот сайт сделала в рамках прохождения обучения по верстке на курсах от <a href="https://webcademy.ru">WebCademy.ru</a></p>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>
+
+
