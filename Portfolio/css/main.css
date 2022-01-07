@@ -189,9 +189,16 @@ section {
 }
 
 .header__icons {
+  display: -webkit-box;
+  display: flex;
   -webkit-box-align: center;
           align-items: center;
-  margin-top: -18px;
+  margin-top: -87px;
+}
+
+.header__icons svg {
+  width: 42px;
+  height: 42px;
 }
 
 .header__icons > * + * {

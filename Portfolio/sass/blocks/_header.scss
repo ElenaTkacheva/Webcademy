@@ -7,8 +7,13 @@
 
 }
 .header__icons {
+    display: flex;
     align-items: center;
-    margin-top: -18px;
+    margin-top: -87px;
+}
+.header__icons svg {
+    width: 42px;
+    height: 42px;
 }
 .header__icons > * + * {
     margin-left: 26px;
