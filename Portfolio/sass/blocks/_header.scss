@@ -12,11 +12,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100px;
 }
-.header__icons svg {
+.header__icons a + a {
+    margin-left: 26px;
+}
+.icon-github {
     width: 42px;
     height: 42px;
+}
+.icon-linkedin {
+    width: 32px;
+    height: 32px;
 }
 
 .header__content {
@@ -39,7 +45,7 @@
 
 .header__img {
     position: relative;
-    max-width: 100%;
+    max-width: 1440px;
     z-index: -1;
     margin-top: -150px;
     margin-left: auto;

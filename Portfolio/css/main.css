@@ -199,12 +199,20 @@ section {
           align-items: center;
   -webkit-box-pack: justify;
           justify-content: space-between;
-  width: 100px;
 }
 
-.header__icons svg {
+.header__icons a + a {
+  margin-left: 26px;
+}
+
+.icon-github {
   width: 42px;
   height: 42px;
+}
+
+.icon-linkedin {
+  width: 32px;
+  height: 32px;
 }
 
 .header__content {
@@ -233,7 +241,7 @@ section {
 
 .header__img {
   position: relative;
-  max-width: 100%;
+  max-width: 1440px;
   z-index: -1;
   margin-top: -150px;
   margin-left: auto;
@@ -470,17 +478,9 @@ h5.gradient-line {
   margin-right: 15px;
 }
 
-.card__img {
-  margin-bottom: 16px;
-}
-
 .card--big {
   max-width: 540px;
   margin-bottom: 50px;
-}
-
-.card--big img {
-  margin-bottom: 20px;
 }
 
 .card--big .title4 {
@@ -492,8 +492,12 @@ h5.gradient-line {
   font-size: 20px;
 }
 
-.card__img {
-  margin-bottom: 16px;
+.card__text {
+  padding-top: 16px;
+}
+
+.card--big .card__text {
+  padding-top: 20px;
 }
 
 .card__text p {
