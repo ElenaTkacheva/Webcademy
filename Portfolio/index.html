@@ -62,7 +62,42 @@
 			</symbol>
 		</svg>
 
+		<div class="overlay"></div>
+
 		<header class="header">
+
+			<div class="container">
+				<nav class="nav-tablet">
+					<div class="nav-tablet-title">
+						<p>HTML-верстальщик</p>
+					</div>
+					<div class="nav-tablet-icon-wrapper">
+						<div class="nav-tablet-icon"></div>
+					</div>
+				</nav>
+			</div>
+
+			<nav class="nav-mobile">
+				<div class="nav-mobile__list">
+					<a href="#about">Навыки</a>
+					<a href="#portfolio">Портфолио</a>
+					<a href="#timeline">Как я работаю</a>
+					<a href="#contacts">Контакты</a>
+				</div>
+				<div class="nav-mobile__social-wrapper">
+					<div class="nav-mobile__social-icons">
+						<a href="#"><img class="icons" src="./img/icons/telegram.svg" alt="telegram"></a>
+						<a href="#"><img class="icons" src="./img/icons/vk.svg" alt="vk"></a>
+						<a href="#"><img class="icons" src="./img/icons/facebook.svg" alt="facebook"></a>
+						<a href="#"><img class="icons" src="./img/icons/instagram.svg" alt="instagram"></a>
+						<a href="#"><img class="icons" src="./img/icons/whatsapp.svg" alt="whatsapp"></a>
+					</div>
+					<a class="link" href="mailto:echelysheva@yahoo.ca">echelysheva@yahoo.ca</a> 
+				</div>
+			</nav>
+
+
+
 			<div class="header__nav">
 				<div class="container">
 					<div class="header__wrapper">
@@ -97,6 +132,9 @@
 					<div class="header__content">
 						<div class="header__content-desc">
 							<h1 class="title1 gradient-line">Елена <br> Ткачева</h1>
+							<div class="header__content-img-mobile">
+								<img src="./img/header/header-img.jpg" alt="Работа верстальщика">
+							</div>
 							<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ. </p>
 							<div class="header__buttons">
 								<a href="#about" class="button">Познакомиться</a>
@@ -259,11 +297,11 @@
 					<div class="contacts__row-left">
 						<div class="contacts__list">
 							<ul>
-								<li class="contacts__list-item">
+								<li class="contacts__list-item contacts__list-item--mobile">
 									<p>Email</p>
 									<a class="link" href="mailto:echelysheva@yahoo.ca">echelysheva@yahoo.ca</a>
 								</li>
-								<li class="contacts__list-item">
+								<li class="contacts__list-item contacts__list-item--mobile">
 									<p>Телефон</p>
 									<a class="link" href="tel:+79801234567">+7 (980) 123-45-67</a>
 								</li>
@@ -298,6 +336,8 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="./main.js"></script>
 
 	</body>
 </html>
