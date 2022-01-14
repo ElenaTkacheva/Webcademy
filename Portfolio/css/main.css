@@ -1318,6 +1318,10 @@ h5.gradient-line {
     width: 320px;
   }
 
+  .container--nav-tablet {
+    width: 100%;
+  }
+
   .header {
     padding-bottom: 40px;
   }
