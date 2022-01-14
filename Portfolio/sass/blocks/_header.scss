@@ -19,10 +19,20 @@
 .icon-github {
     width: 42px;
     height: 42px;
+    transition: opacity 0.2s ease-in;
+
+    &:hover, :active, :focus {
+        opacity: 0.75;
+    }
 }
 .icon-linkedin {
     width: 32px;
     height: 32px;
+    transition: opacity 0.2s ease-in;
+
+    &:hover, :active, :focus {
+        opacity: 0.75;
+    }
 }
 .header__content {
     display: flex;

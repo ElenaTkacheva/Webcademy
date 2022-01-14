@@ -8,7 +8,25 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 64px;
+    transition: background-color 0.2s ease-in;
+
+    &:hover, :focus {
+        background-color: #FFEB8D;
+    }
+
+    &:active {
+        background-color: #F5D22D;
+    }
 }
 .button--transparent {    
     background-color: #EFF7FC;
+    transition: background-color 0.2s ease-in;
+
+    &:hover, :focus {
+        background-color: #D1EDFF;
+    }
+
+    &:active {
+        background-color: #B0DCF8;
+    }
 }
