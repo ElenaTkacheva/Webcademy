@@ -1,0 +1,44 @@
+.nav-sticky {
+    position: sticky;
+    top: -40px;
+    left: 0;
+    z-index: 50000;
+    background-color: #FFFFFF;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.nav-sticky__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin-bottom: 82px;
+}
+.nav__item.active a {
+    color: #FF543E;
+}
+.nav__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__icons a + a {
+    margin-left: 26px;
+}
+.icon-github {
+    width: 42px;
+    height: 42px;
+    transition: opacity 0.2s ease-in;
+
+    &:hover, :active, :focus {
+        opacity: 0.75;
+    }
+}
+.icon-linkedin {
+    width: 32px;
+    height: 32px;
+    transition: opacity 0.2s ease-in;
+
+    &:hover, :active, :focus {
+        opacity: 0.75;
+    }
+}

@@ -1,0 +1,68 @@
+.nav-tablet {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+}
+.nav-tablet-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+}
+.nav-tablet-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    margin-left: auto;
+    cursor: pointer;
+    z-index: 120;
+}
+.nav-tablet-icon {
+    position: relative;
+    width: 40px;
+    height: 5px;
+    background-color: #000000;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 5px;
+        background-color: #000000;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 5px;
+        background-color: #000000;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+}
+.nav-tablet-icon.active {
+    background-color: transparent;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 44;
+}
+.nav-tablet-icon.active::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+.nav-tablet-icon.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+

@@ -1,0 +1,108 @@
+@media (max-width: 767px) {
+    .container {
+        width: 320px;
+    }
+    .container--nav-tablet {
+        width: 100%;
+    }
+    .header {
+        padding-bottom: 40px;
+    }
+    .title1 {
+        font-size: 32px;
+    }
+    .gradient-line.title1 {
+        background-position: left bottom 4px;
+        background-size: 100% 8px;
+    }
+    .header__main {
+        flex-direction: column;
+    }
+    .header__content-img {
+        display: none;
+    }
+    .shadow {
+        box-shadow: none;
+    }
+    .content-img {
+        display: none;
+    }
+    .header__content-img-mobile {
+        display: block;
+        margin-top: 10px;
+    }
+    .header__content {
+        padding-top: 0;
+        width: 290px;
+    }
+    .header__content p {
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+    .header__img {
+        margin-top: -30px;
+    }
+    .title3 {
+        font-size: 24px;
+    }
+    .header__about-row {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .header__about-skills {
+        margin-bottom: 30px;
+        margin-right: 0;
+        width: 290px;
+    }
+    .header__about-list {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .title2 {
+        font-size: 32px;
+    }
+    .gradient-line.title2 {
+        background-position: left bottom 5px;
+        background-size: 100% 7px;
+    }
+    .portfolio__cards {
+        margin-bottom: 0;
+    }
+    .card--big {
+        min-width: unset;
+        margin-bottom: unset;
+    }
+    .card {
+        margin-bottom: 30px;
+        width: 290px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .timeline__column {
+        width: 290px;
+    }
+    .br {
+        display: none;
+    }
+    .contacts__row {
+        flex-direction: column;
+    }
+    .contacts__row-right {
+        margin-left: 0px;
+    }
+    .contacts__row-left {
+        margin-top: 0;
+    }
+    .contacts__text {
+        margin-bottom: 20px;
+        width: 290px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .button--submit {
+        display: inline-block;
+    }
+}

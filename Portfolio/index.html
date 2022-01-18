@@ -12,6 +12,7 @@
 		<meta name="keywords" content="ключевые слова, фразы" />
 
 		<!-- Styles -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="./css/main.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +36,7 @@
 		<meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 	</head>
-	<body>
+	<body id="top">
 
 		<svg style="display: none;" xmlns="http://www.w3.org/2000/svg" >
 			<symbol id="linkedin" width="32" height="32" viewBox="0 0 32 32" fill="black">
@@ -63,6 +64,34 @@
 		</svg>
 
 		<div class="overlay"></div>
+
+		<nav class="nav-sticky">
+			<div class="container">
+				<div class="nav-sticky__wrapper">
+					<!-- Навигация -->
+						<div class="nav">
+							<ul class="nav__list" id="nav-menu">
+								<li class="nav__item"><a href="#about">Навыки</a></li>
+								<li class="nav__item"><a href="#portfolio">Портфолио</a></li>
+								<li class="nav__item"><a href="#timeline">Как я работаю</a></li>
+								<li class="nav__item"><a href="#contacts">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="nav__icons">
+							<a href="#">
+								<svg class="icon-linkedin">
+									<use href="#linkedin"></use>
+								</svg>
+							</a>
+							<a href="#">
+								<svg class="icon-github">
+									<use href="#github"></use>
+								</svg>
+							</a>
+						</div>
+				</div>
+			</div>
+		</nav>
 
 		<header class="header">
 
@@ -153,7 +182,7 @@
 			<section class="header__about" id="about">
 				<div class="container">
 					<div class="header__about-row">
-						<div class="header__about-skills">
+						<div class="header__about-skills" data-aos="fade-right" data-aos-duration="2000">
 							<div class="header__about-title">
 								<h3 class="title3">Что я умею:</h3>
 							</div>
@@ -165,7 +194,7 @@
 								<li>с Bootstrap и без него</li>
 							</ul>
 						</div>
-						<div class="header__about-social">
+						<div class="header__about-social" data-aos="fade-left" data-aos-duration="2000">
 							<div class="header__about-title">
 								<h3 class="title3">На связи:</h3>
 							</div>
@@ -190,54 +219,65 @@
 				<div class="portfolio__title">
 					<h2 class="title2 gradient-line">Портфолио</h2>
 				</div>
-				<div class="portfolio__cards">
-					<a href="#" class="card card--big">
-						<div class="card__img">
-							<img src="./img/portfolio/card1.jpg" alt="Многостраничный сайт">
-						</div>
-						<div class="card__text">
-							<h4 class="title4">Верстка “Форест тревел”</h4>
-							<p class="project-card__desc">Верстка многостраничного сайта</p>
-						</div>
-					</a>
-					<a href="#" class="card card--big">
-						<div class="card__img">
-							<img src="./img/portfolio/card2.jpg" alt="Лендинг">
-						</div>
-						<div class="card__text">
-							<h4 class="title4">Сайт приложения “Юнит”</h4>
-							<p class="project-card__desc">Верстка лендинга</p>
-						</div>
-					</a>
+				<div class="mix-block">
+					<div class="mix-block__links">
+						<button class="mix-btn" type="button" data-filter="all" id="mix-all">Все работы</button>
+						<button class="mix-btn" type="button" data-filter=".html">HTML верстка</button>
+						<button class="mix-btn" type="button" data-filter=".wordpress">WordPress</button>
+					</div>
+					<div class="portfolio__cards" id="mix-cards">
+						<a href="#" class="card card--big mix html">
+							<div class="card__img">
+								<img src="./img/portfolio/forest-travel.jpg" alt="Многостраничный сайт">
+								<span>Смотреть проект</span>
+							</div>
+							<div class="card__text">
+								<h4 class="title4">Верстка “Форест тревел”</h4>
+								<p class="project-card__desc">Верстка многостраничного сайта</p>
+							</div>
+						</a>
+						<a href="#" class="card card--big mix html">
+							<div class="card__img">
+								<img src="./img/portfolio/unit-project.jpg" alt="Лендинг">
+								<span>Смотреть проект</span>
+							</div>
+							<div class="card__text">
+								<h4 class="title4">Сайт приложения “Юнит”</h4>
+								<p class="project-card__desc">Верстка лендинга</p>
+							</div>
+						</a>
 
-					<a href="#" class="card">
-						<div class="card__img">
-							<img src="./img/portfolio/card3.jpg" alt="Многостраничный сайт">
-						</div>
-						<div class="card__text">
-							<h4 class="title4">Верстка “Мир Авто”</h4>
-							<p class="project-card__desc">Верстка многостраничного сайта</p>
-						</div>
-					</a>
-					<a href="#" class="card">
-						<div class="card__img">
-							<img src="./img/portfolio/card4.jpg" alt="Многостраничный сайт">
-						</div>
-						<div class="card__text">
-							<h4 class="title4">Верстка “Мир Авто”</h4>
-							<p class="project-card__desc">Верстка многостраничного сайта</p>
-						</div>
-					</a>
-					<a href="#" class="card">
-						<div class="card__img">
-							<img src="./img/portfolio/card5.jpg" alt="Многостраничный сайт">
-						</div>
-						<div class="card__text">
-							<h4 class="title4">Верстка “Мир Авто”</h4>
-							<p class="project-card__desc">Верстка многостраничного сайта</p>
-						</div>
-					</a>
-
+						<a href="#" class="card mix wordpress">
+							<div class="card__img">
+								<img src="./img/portfolio/card3.jpg" alt="Многостраничный сайт">
+								<span>Смотреть проект</span>
+							</div>
+							<div class="card__text">
+								<h4 class="title4">Верстка “Мир Авто”</h4>
+								<p class="project-card__desc">Верстка многостраничного сайта</p>
+							</div>
+						</a>
+						<a href="#" class="card mix wordpress">
+							<div class="card__img">
+								<img src="./img/portfolio/card4.jpg" alt="Многостраничный сайт">
+								<span>Смотреть проект</span>
+							</div>
+							<div class="card__text">
+								<h4 class="title4">Верстка “Мир Авто”</h4>
+								<p class="project-card__desc">Верстка многостраничного сайта</p>
+							</div>
+						</a>
+						<a href="#" class="card mix html wordpress">
+							<div class="card__img">
+								<img src="./img/portfolio/card5.jpg" alt="Многостраничный сайт">
+								<span>Смотреть проект</span>
+							</div>
+							<div class="card__text">
+								<h4 class="title4">Верстка “Мир Авто”</h4>
+								<p class="project-card__desc">Верстка многостраничного сайта</p>
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -247,7 +287,7 @@
 					<h2 class="title2 gradient-line">Как я работаю</h2>
 				</div>
 				<div class="timeline__column">
-					<div class="timeline-item">
+					<div class="timeline-item" data-aos="zoom-in" data-aos-duration="1500">
 						<div class="timeline-item__content">
 							<h5 class="title5 gradient-line">Оцениваю макет</h5>
 							<p class="timeline-item__desc">Оцениваю объем работы, сложность, <br class="br">нюансы. Задаю вопросы.</p>
@@ -256,7 +296,7 @@
 						<div class="timeline-item__circle"></div>
 					</div>
 					<div class="timeline-item">
-						<div class="timeline-item__content">
+						<div class="timeline-item__content" data-aos="zoom-in" data-aos-duration="1500">
 							<h5 class="title5 gradient-line">ТЗ, смета и график работ</h5>
 							<p class="timeline-item__desc">Согласовываем техническое задание и <br class="br">график работ по проекту. Осмечиваю<br class="br"> стоимость по этапам работы.</p>
 							<p class="timeline-item__time">Время: 2 - 4 часа</p>
@@ -264,21 +304,21 @@
 						<div class="timeline-item__circle"></div>
 					</div>
 					<div class="timeline-item">
-						<div class="timeline-item__content">
+						<div class="timeline-item__content" data-aos="zoom-in" data-aos-duration="1500">
 							<h5 class="title5 gradient-line">Вы держите руку на пульсе</h5>
 							<p class="timeline-item__desc">Выдаю клиенту доступ к GitHub репозиторию и <br class="br">доске Trello. Вы в любое время можете видеть <br class="br">актуальное состояние проекта и задач.</p>
 						</div>
 						<div class="timeline-item__circle"></div>
 					</div>
 					<div class="timeline-item">
-						<div class="timeline-item__content">
+						<div class="timeline-item__content" data-aos="zoom-in" data-aos-duration="1500">
 							<h5 class="title5 gradient-line">Выполняю каждый этап</h5>
 							<p class="timeline-item__desc">Поочередно выполняю каждый этап <br class="br">работы. Передаю результаты. Заказчик <br class="br">производит поэтапную оплату.</p>
 						</div>
 						<div class="timeline-item__circle"></div>
 					</div>
 					<div class="timeline-item">
-						<div class="timeline-item__content">
+						<div class="timeline-item__content" data-aos="zoom-in" data-aos-duration="1500">
 							<h5 class="title5 gradient-line">Финальное ревью проекта</h5>
 							<p class="timeline-item__desc">Проект готов. Финальное ревью и полировка до <br class="br">идеального состояния. Передаю файлы проекта, <br class="br">заливаю сайт на хостинг заказчика.</p>
 							<p class="timeline-item__time">Время: 2 - 4 часа</p>
@@ -295,6 +335,9 @@
 				</div>
 				<div class="contacts__row">
 					<div class="contacts__row-left">
+						<div class="contacts__text">
+							<p>Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом —  напишите мне.</p>
+						</div>
 						<div class="contacts__list">
 							<ul>
 								<li class="contacts__list-item contacts__list-item--mobile">
@@ -303,7 +346,7 @@
 								</li>
 								<li class="contacts__list-item contacts__list-item--mobile">
 									<p>Телефон</p>
-									<a class="link" href="tel:+79801234567">+7 (980) 123-45-67</a>
+									<a class="link link--phone" href="tel:+79801234567">+7 (980) 123-45-67</a>
 								</li>
 							</ul>
 						</div>
@@ -315,13 +358,31 @@
 							<a href="#"><img class="icons" src="./img/icons/whatsapp.svg" alt="whatsapp"></a>
 						</div>
 					</div>
-					<div class="contacts__row-right">
-						<p>Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом —  напишите мне.
-						</p>
-						<div class="contacts__img">
-							<img src="./img/contact.svg" alt="Picture">
-						</div>
+
+					<div class="form-wrapper">
+						<form action="#" class="contact-form">
+	
+							<div class="form-item">
+								<span class="fake-placeholder">Ваш email</span>
+								<input class="form-input" type="email" name="email">
+							</div>
+	
+							<div class="form-item">
+								<span class="fake-placeholder">Сообщение</span>
+								<textarea class="form-input" name="message" cols="30" rows="5"></textarea>
+								</div>
+	
+							<div class="form-button">
+								<button class="button button--submit" type="submit" name="submit">Отправить</button>
+							</div>
+	
+						</form>
+						<div id="answer"></div>
 					</div>
+
+				</div>
+				<div class="contacts__img">
+					<img class="paralax" src="./img/contact.svg" alt="Picture">
 				</div>
 			</div>
 		</section>
@@ -337,6 +398,26 @@
 			</div>
 		</footer>
 
+		<!-- backtop -->
+		<a href="#top" class="backtop-btn" id="backtop"><img src="./img/arrowup.svg" alt="backtop button"></a> 
+
+		<!-- jQuery -->
+		<script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+		<script src="./libs/jquery/jquery.validate.min.js"></script>
+
+		<!-- Page Nav -->
+		<script src="./libs/pageNav/nav.js"></script>
+
+		<!-- MixItUp -->
+		<script src="./libs/mixitup/mixitup.min.js"></script>
+
+		<!-- AOS -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+  			AOS.init();
+		</script>
+
+		<!-- Main JS -->
 		<script src="./main.js"></script>
 
 	</body>
