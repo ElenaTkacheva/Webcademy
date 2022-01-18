@@ -1,0 +1,67 @@
+.header {
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 82px;
+}
+.header__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__icons a + a {
+    margin-left: 26px;
+}
+.icon-github {
+    width: 42px;
+    height: 42px;
+    transition: opacity 0.2s ease-in;
+
+    &:hover, :active, :focus {
+        opacity: 0.75;
+    }
+}
+.icon-linkedin {
+    width: 32px;
+    height: 32px;
+    transition: opacity 0.2s ease-in;
+
+    &:hover, :active, :focus {
+        opacity: 0.75;
+    }
+}
+.header__content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.header__content-desc {
+    max-width: 542px;
+}
+.header__content-desc p {
+    max-width: 540px;
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 1.6;
+}
+.shadow {
+    box-shadow: 40px 40px 2px 1px rgba(255, 255, 255, 0.5);
+}
+.header__img {
+    position: relative;
+    max-width: 1440px;
+    z-index: -1;
+    margin-top: -150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header__buttons {
+    margin-top: 30px;
+}
+.header__buttons > * + * {
+    margin-left: 20px;
+}

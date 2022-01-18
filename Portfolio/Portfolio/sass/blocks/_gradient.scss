@@ -1,0 +1,15 @@
+.gradient-line {
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: left bottom 14px;
+    background-size: 100% 12px;
+    background-image: linear-gradient(to right, #FBDC4D, #FBDC4D);
+}
+h2.gradient-line {
+    background-size: 100% 8px;
+    background-position: left bottom 11px;
+}
+h5.gradient-line {
+    background-size: 100% 4px;
+    background-position: left bottom 4px;
+}
