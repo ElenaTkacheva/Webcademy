@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>Portfolio</title>
+		<meta name="description" content="Описание страницы" />
+		<meta name="keywords" content="ключевые слова, фразы" />
+
+		<!-- Styles -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+		<!-- Open Graph -->
+		<!-- <meta property="og:url" content="" /> -->
+		<!-- <meta property="og:type" content="website" />
+		<meta property="og:title" content="Туристическое агентство Форест Тревел" />
+		<meta property="og:description" content="Турпоходы по дикой природе" />
+		<meta property="og:image" content="./img/opengraph.jpg"/> -->
+
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#1a60cf">
+		<link rel="shortcut icon" href="./img/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body id="top">
+
+		<svg style="display: none;" xmlns="http://www.w3.org/2000/svg" >
+			<symbol id="linkedin" width="32" height="32" viewBox="0 0 32 32" fill="black">
+				<g clip-path="url(#clip0_112_518)">
+					<path d="M7.44897 10.2947H1.02492C0.739808 10.2947 0.508789 10.5258 0.508789 10.8108V31.4485C0.508789 31.7336 0.739808 31.9647 1.02492 31.9647H7.44897C7.73408 31.9647 7.9651 31.7336 7.9651 31.4485V10.8108C7.9651 10.5258 7.73408 10.2947 7.44897 10.2947Z" fill="black"/>
+					<path d="M4.23907 0.0351562C1.90163 0.0351562 0 1.93472 0 4.26958C0 6.60548 1.90163 8.50576 4.23907 8.50576C6.57466 8.50576 8.47474 6.60538 8.47474 4.26958C8.47484 1.93472 6.57466 0.0351562 4.23907 0.0351562Z" fill="black"/>
+					<path d="M23.7892 9.78174C21.209 9.78174 19.3017 10.8909 18.1449 12.1512V10.8108C18.1449 10.5258 17.9138 10.2947 17.6287 10.2947H11.4766C11.1915 10.2947 10.9604 10.5258 10.9604 10.8108V31.4485C10.9604 31.7336 11.1915 31.9647 11.4766 31.9647H17.8866C18.1717 31.9647 18.4027 31.7336 18.4027 31.4485V21.2376C18.4027 17.7968 19.3373 16.4563 21.7359 16.4563C24.3481 16.4563 24.5557 18.6053 24.5557 21.4147V31.4486C24.5557 31.7337 24.7867 31.9648 25.0718 31.9648H31.4842C31.7693 31.9648 32.0004 31.7337 32.0004 31.4486V20.1285C32.0004 15.0121 31.0248 9.78174 23.7892 9.78174Z" fill="black"/>
+				</g>
+				<!-- <defs>
+					<clipPath id="clip0_112_518">
+						<rect width="32" height="32" fill="black"/>
+					</clipPath>
+				</defs> -->
+			</symbol>
+			<symbol id="github" width="42" height="42" viewBox="0 0 42 42" fill="black">
+				<g clip-path="url(#clip0_112_516)">
+					<path d="M21 0.875C9.3975 0.875 0 10.115 0 21.511C0 30.6303 6.0165 38.3635 14.3587 41.09C15.4087 41.2843 15.7937 40.6455 15.7937 40.0978C15.7937 39.6078 15.7763 38.3093 15.7675 36.589C9.926 37.8333 8.694 33.8205 8.694 33.8205C7.7385 31.4388 6.35775 30.8018 6.35775 30.8018C4.4555 29.5225 6.50475 29.5488 6.50475 29.5488C8.6135 29.6923 9.72125 31.675 9.72125 31.675C11.5938 34.8303 14.637 33.9185 15.8375 33.3918C16.0265 32.0565 16.5673 31.1483 17.1675 30.632C12.5038 30.1158 7.602 28.3413 7.602 20.4348C7.602 18.1825 8.41575 16.3415 9.76325 14.8977C9.527 14.3763 8.81825 12.278 9.947 9.436C9.947 9.436 11.7058 8.883 15.722 11.5518C17.402 11.0933 19.187 10.8658 20.972 10.8553C22.757 10.8658 24.542 11.0933 26.222 11.5518C30.212 8.883 31.9707 9.436 31.9707 9.436C33.0995 12.278 32.3908 14.3763 32.1807 14.8977C33.5195 16.3415 34.3332 18.1825 34.3332 20.4348C34.3332 28.3623 29.4245 30.107 24.752 30.6145C25.487 31.234 26.1695 32.4993 26.1695 34.433C26.1695 37.1945 26.1432 39.4135 26.1432 40.0838C26.1432 40.6245 26.5107 41.2703 27.587 41.0638C35.9888 38.3548 42 30.6163 42 21.511C42 10.115 32.5972 0.875 21 0.875Z" fill="#212121"/>
+				</g>
+				<!-- <defs>
+					<clipPath id="clip0_112_516">
+						<rect width="42" height="42" fill="black"/>
+					</clipPath>
+				</defs> -->
+			</symbol>
+		</svg>
+
+		<div class="overlay"></div>
+
+		<nav class="nav-sticky">
+			<div class="container">
+				<div class="nav-sticky__wrapper">
+					<!-- Навигация -->
+						<div class="nav">
+							<ul class="nav__list" id="nav-menu">
+								<li class="nav__item"><a href="#about">Навыки</a></li>
+								<li class="nav__item"><a href="#portfolio">Портфолио</a></li>
+								<li class="nav__item"><a href="#timeline">Как я работаю</a></li>
+								<li class="nav__item"><a href="#contacts">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="nav__icons">
+							<a href="#">
+								<svg class="icon-linkedin">
+									<use href="#linkedin"></use>
+								</svg>
+							</a>
+							<a href="#">
+								<svg class="icon-github">
+									<use href="#github"></use>
+								</svg>
+							</a>
+						</div>
+				</div>
+			</div>
+		</nav>
+
+		<header class="header">
+
+			<div class="container container--nav-tablet">
+				<nav class="nav-tablet">
+					<div class="nav-tablet-title">
+						<p>HTML-верстальщик</p>
+					</div>
+					<div class="nav-tablet-icon-wrapper">
+						<div class="nav-tablet-icon"></div>
+					</div>
+				</nav>
+			</div>
+
+			<nav class="nav-mobile">
+				<div class="nav-mobile__list">
+					<a href="#about">Навыки</a>
+					<a href="#portfolio">Портфолио</a>
+					<a href="#timeline">Как я работаю</a>
+					<a href="#contacts">Контакты</a>
+				</div>
+				<div class="nav-mobile__social-wrapper">
+					<div class="nav-mobile__social-icons">
+						<a href="#"><img class="icons" src="./img/icons/telegram.svg" alt="telegram"></a>
+						<a href="#"><img class="icons" src="./img/icons/vk.svg" alt="vk"></a>
+						<a href="#"><img class="icons" src="./img/icons/facebook.svg" alt="facebook"></a>
+						<a href="#"><img class="icons" src="./img/icons/instagram.svg" alt="instagram"></a>
+						<a href="#"><img class="icons" src="./img/icons/whatsapp.svg" alt="whatsapp"></a>
+					</div>
+					<a class="link" href="mailto:echelysheva@yahoo.ca">echelysheva@yahoo.ca</a> 
+				</div>
+			</nav>
+
+
+
+			<div class="header__nav">
+				<div class="container">
+					<div class="header__wrapper">
+						<!-- Навигация -->
+						<nav class="nav">
+							<ul class="nav__list">
+								<li><a href="#about">Навыки</a></li>
+								<li><a href="#portfolio">Портфолио</a></li>
+								<li><a href="#timeline">Как я работаю</a></li>
+								<li><a href="#contacts">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="header__icons">
+							<!-- <a href="#"><img src="./img/icons/linkedin.svg" alt="linkedin"></a> 
+							<a href="#"><img src="./img/icons/github.svg" alt="github"></a> -->
+							<a href="#">
+								<svg class="icon-linkedin">
+									<use href="#linkedin"></use>
+								</svg>
+							</a>
+							<a href="#">
+								<svg class="icon-github">
+									<use href="#github"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__main">
+				<div class="container">
+					<div class="header__content">
+						<div class="header__content-desc">
+							<h1 class="title1 gradient-line">Елена <br> Ткачева</h1>
+							<div class="header__content-img-mobile">
+								<img src="./img/header/header-img.jpg" alt="Работа верстальщика">
+							</div>
+							<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ. </p>
+							<div class="header__buttons">
+								<a href="#about" class="button">Познакомиться</a>
+								<a href="#contacts" class="button button--transparent">Контакты</a>
+							</div>
+						</div>
+						<div class="header__content-img shadow">
+							<img class="content-img" src="./img/header/header-img.jpg" alt="Работа верстальщика">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__img">
+				<img class="image" src="./img/header/header-bg.png" alt="background image">
+			</div>
+			<section class="header__about" id="about">
+				<div class="container">
+					<div class="header__about-row">
+						<div class="header__about-skills" data-aos="fade-right" data-aos-duration="2000">
+							<div class="header__about-title">
+								<h3 class="title3">Что я умею:</h3>
+							</div>
+							<ul class="header__about-list">
+								<li>pixel perfect, полное соответствие макету</li>
+								<li>верстаю с сеткой или без</li>
+								<li>адаптивная верстка под мобильные устройства</li>
+								<li>оптимизация по retina экраны</li>
+								<li>с Bootstrap и без него</li>
+							</ul>
+						</div>
+						<div class="header__about-social" data-aos="fade-left" data-aos-duration="2000">
+							<div class="header__about-title">
+								<h3 class="title3">На связи:</h3>
+							</div>
+							<div class="social-icons">
+								<a href="#"><img class="icons" src="./img/icons/telegram.svg" alt="telegram"></a>
+								<a href="#"><img class="icons" src="./img/icons/vk.svg" alt="vk"></a>
+								<a href="#"><img class="icons" src="./img/icons/facebook.svg" alt="facebook"></a>
+								<a href="#"><img class="icons" src="./img/icons/instagram.svg" alt="instagram"></a>
+								<a href="#"><img class="icons" src="./img/icons/whatsapp.svg" alt="whatsapp"></a>
+							</div>
+							<div class="social-email">
+								<a class="link" href="mailto:echelysheva@yahoo.ca">echelysheva@yahoo.ca</a> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</header>
+		
+		<section class="portfolio" id="portfolio">
+			<div class="container">
+				<div class="portfolio__title">
+					<h2 class="title2 gradient-line">Портфолио</h2>
+				</div>
+				<div class="mix-block">
+					<div class="mix-block__links">
+						<button class="mix-btn" type="button" data-filter="all" id="mix-all">Все работы</button>
+						<button class="mix-btn" type="button" data-filter=".html">HTML верстка</button>
+						<button class="mix-btn" type="button" data-filter=".wordpress">WordPress</button>
+					</div>
+					<div class="portfolio__cards" id="mix-cards">
+						<a href="#" class="card card--big mix html">
+							<div class="card__img">
+								<img src="./img/portfolio/forest-travel.jpg" alt="Многостраничный сайт">
+								<span>Смотреть проект</span>
+							</div>
+							<div class="card__text">
+								<h4 class="title4">Верстка “Форест тревел”</h4>
+								<p class="project-card__desc">Верстка многостраничного сайта</p>
+							</div>
+						</a>
+						<a href="#" class="card card--big mix html">
+							<div class="card__img">
+								<img src="./img/portfolio/unit-project.jpg" alt="Лендинг">
+								<span>Смотреть проект</span>
+							</div>
+							<div class="card__text">
+								<h4 class="title4">Сайт приложения “Юнит”</h4>
+								<p class="project-card__desc">Верстка лендинга</p>
+							</div>
+						</a>
+
+						<a href="#" class="card mix wordpress">
+							<div class="card__img">
+								<img src="./img/portfolio/card3.jpg" alt="Многостраничный сайт">
+								<span>Смотреть проект</span>
+							</div>
+							<div class="card__text">
+								<h4 class="title4">Верстка “Мир Авто”</h4>
+								<p class="project-card__desc">Верстка многостраничного сайта</p>
+							</div>
+						</a>
+						<a href="#" class="card mix wordpress">
+							<div class="card__img">
+								<img src="./img/portfolio/card4.jpg" alt="Многостраничный сайт">
+								<span>Смотреть проект</span>
+							</div>
+							<div class="card__text">
+								<h4 class="title4">Верстка “Мир Авто”</h4>
+								<p class="project-card__desc">Верстка многостраничного сайта</p>
+							</div>
+						</a>
+						<a href="#" class="card mix html wordpress">
+							<div class="card__img">
+								<img src="./img/portfolio/card5.jpg" alt="Многостраничный сайт">
+								<span>Смотреть проект</span>
+							</div>
+							<div class="card__text">
+								<h4 class="title4">Верстка “Мир Авто”</h4>
+								<p class="project-card__desc">Верстка многостраничного сайта</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="timeline" id="timeline">
+			<div class="container"> 
+				<div class="timeline__title">
+					<h2 class="title2 gradient-line">Как я работаю</h2>
+				</div>
+				<div class="timeline__column">
+					<div class="timeline-item" data-aos="zoom-in" data-aos-duration="1500">
+						<div class="timeline-item__content">
+							<h5 class="title5 gradient-line">Оцениваю макет</h5>
+							<p class="timeline-item__desc">Оцениваю объем работы, сложность, <br class="br">нюансы. Задаю вопросы.</p>
+							<p class="timeline-item__time">Время: 2 часа</p>
+						</div>
+						<div class="timeline-item__circle"></div>
+					</div>
+					<div class="timeline-item">
+						<div class="timeline-item__content" data-aos="zoom-in" data-aos-duration="1500">
+							<h5 class="title5 gradient-line">ТЗ, смета и график работ</h5>
+							<p class="timeline-item__desc">Согласовываем техническое задание и <br class="br">график работ по проекту. Осмечиваю<br class="br"> стоимость по этапам работы.</p>
+							<p class="timeline-item__time">Время: 2 - 4 часа</p>
+						</div>
+						<div class="timeline-item__circle"></div>
+					</div>
+					<div class="timeline-item">
+						<div class="timeline-item__content" data-aos="zoom-in" data-aos-duration="1500">
+							<h5 class="title5 gradient-line">Вы держите руку на пульсе</h5>
+							<p class="timeline-item__desc">Выдаю клиенту доступ к GitHub репозиторию и <br class="br">доске Trello. Вы в любое время можете видеть <br class="br">актуальное состояние проекта и задач.</p>
+						</div>
+						<div class="timeline-item__circle"></div>
+					</div>
+					<div class="timeline-item">
+						<div class="timeline-item__content" data-aos="zoom-in" data-aos-duration="1500">
+							<h5 class="title5 gradient-line">Выполняю каждый этап</h5>
+							<p class="timeline-item__desc">Поочередно выполняю каждый этап <br class="br">работы. Передаю результаты. Заказчик <br class="br">производит поэтапную оплату.</p>
+						</div>
+						<div class="timeline-item__circle"></div>
+					</div>
+					<div class="timeline-item">
+						<div class="timeline-item__content" data-aos="zoom-in" data-aos-duration="1500">
+							<h5 class="title5 gradient-line">Финальное ревью проекта</h5>
+							<p class="timeline-item__desc">Проект готов. Финальное ревью и полировка до <br class="br">идеального состояния. Передаю файлы проекта, <br class="br">заливаю сайт на хостинг заказчика.</p>
+							<p class="timeline-item__time">Время: 2 - 4 часа</p>
+						</div>
+						<div class="timeline-item__circle"></div>
+					</div>
+				</div>
+			</div> 
+		</section>
+		<section class="contacts" id="contacts">
+			<div class="container">
+				<div class="contacts__title">
+					<h2 class="title2 gradient-line">Контакты</h2>
+				</div>
+				<div class="contacts__row">
+					<div class="contacts__row-left">
+						<div class="contacts__text">
+							<p>Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом —  напишите мне.</p>
+						</div>
+						<div class="contacts__list">
+							<ul>
+								<li class="contacts__list-item contacts__list-item--mobile">
+									<p>Email</p>
+									<a class="link" href="mailto:echelysheva@yahoo.ca">echelysheva@yahoo.ca</a>
+								</li>
+								<li class="contacts__list-item contacts__list-item--mobile">
+									<p>Телефон</p>
+									<a class="link link--phone" href="tel:+79801234567">+7 (980) 123-45-67</a>
+								</li>
+							</ul>
+						</div>
+						<div class="social-icons">
+							<a href="#"><img class="icons" src="./img/icons/telegram.svg" alt="telegram"></a>
+							<a href="#"><img class="icons" src="./img/icons/vk.svg" alt="vk"></a>
+							<a href="#"><img class="icons" src="./img/icons/facebook.svg" alt="facebook"></a>
+							<a href="#"><img class="icons" src="./img/icons/instagram.svg" alt="instagram"></a>
+							<a href="#"><img class="icons" src="./img/icons/whatsapp.svg" alt="whatsapp"></a>
+						</div>
+					</div>
+
+					<div class="form-wrapper">
+						<form action="#" class="contact-form">
+	
+							<div class="form-item">
+								<span class="fake-placeholder">Ваш email</span>
+								<input class="form-input" type="email" name="email">
+							</div>
+	
+							<div class="form-item">
+								<span class="fake-placeholder">Сообщение</span>
+								<textarea class="form-input" name="message" cols="30" rows="5"></textarea>
+								</div>
+	
+							<div class="form-button">
+								<button class="button button--submit" type="submit" name="submit">Отправить</button>
+							</div>
+	
+						</form>
+						<div id="answer"></div>
+					</div>
+
+				</div>
+				<div class="contacts__img">
+					<img class="paralax" src="./img/contact.svg" alt="Picture">
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__copyright">
+					<p>&#169; 2022 — Елена Ткачева</p>
+				</div>
+				<div class="footer__desc">
+					<p>Веб-разработчик из Монреаля, занимаюсь версткой и созданием сайтов.</p>
+					<p>Этот сайт сделала в рамках прохождения обучения по верстке на курсах от <a href="https://webcademy.ru">WebCademy.ru</a></p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- backtop -->
+		<a href="#top" class="backtop-btn" id="backtop"><img src="./img/arrowup.svg" alt="backtop button"></a> 
+
+		<!-- jQuery -->
+		<script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+		<script src="./libs/jquery/jquery.validate.min.js"></script>
+
+		<!-- Page Nav -->
+		<script src="./libs/pageNav/nav.js"></script>
+
+		<!-- MixItUp -->
+		<script src="./libs/mixitup/mixitup.min.js"></script>
+
+		<!-- AOS -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+  			AOS.init();
+		</script>
+
+		<!-- Main JS -->
+		<script src="./main.js"></script>
+
+	</body>
+</html>
+
+

@@ -1,0 +1,30 @@
+.header__about {
+    margin-top: -130px;
+    padding-top: 100px;
+}
+.header__about-row {
+    display: flex;
+}
+.header__about-skills {
+    width: 635px;
+    margin-right: 30px;
+}
+.header__about-title {
+    margin-bottom: 30px;
+}
+.header__about-list {
+    font-size: 22px;
+    line-height: 28.6px;
+    position: relative;
+}
+.header__about-list li {
+    margin-bottom: 10px;
+
+    &::before {
+        content: "\2014";
+        margin-right: 7px;
+    }
+}
+.social-email {
+    margin-top: 20px;
+}
