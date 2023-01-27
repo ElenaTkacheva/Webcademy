@@ -87,7 +87,7 @@ body {
 	width: 360px;
 	background-color: rgb(223, 218, 218);
 	border-radius: 10px;
-	box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+	box-shadow: 0px 10px 10px 10px rgba(27, 108, 114, 0.25);
 }
 
 .card::before {
@@ -134,7 +134,7 @@ body {
 }
 
 .card-value {
-	font-size: 92px;
+	font-size: 82px;
 	line-height: 1;
 	color: #000000;
 }
@@ -187,11 +187,39 @@ body {
 		height: 35px;
 		padding: 15px;
 		font-size: 16px;
-		line-height: 16px;
+		line-height: 8px;
 	}
 }
-@media (max-width: 850px) {
+@media (max-width: 320px) {
 	.title {
-		font-size: 26px;
+		font-size: 16px;
+	}
+
+	.form {
+		width: 180px;
+	}
+
+	.input {
+		width: 100px;
+		padding: 4px 6px;
+		font-size: 14px;
+		line-height: 1.5;
+		margin-bottom: 40px;
+	}
+
+	.card {
+		width: 270px;
+	}
+
+	.card-city {
+		font-size: 20px;
+	}
+
+	.card-value {
+		font-size: 60px;
+	}
+
+	.card-description {
+		font-size: 18px;
 	}
 }
