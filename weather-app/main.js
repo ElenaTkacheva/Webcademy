@@ -1,7 +1,5 @@
 import conditions from "./conditions.js";
 
-console.log(conditions);
-
 // элементы на странице
 const form = document.querySelector('.form');
 const input = document.querySelector('.input');
@@ -71,9 +69,7 @@ form.onsubmit = async (e) => {
     const info = conditions.find((obj) => obj.code === data.current.condition.code);
     const filePath = './img/' + (data.current.is_day ? 'day' : 'night') + '/';
     const fileName = (data.current.is_day ? info.day : info.night) + '.png';
-    console.log(fileName);
     const imgPath = filePath + fileName;
-    console.log(imgPath);
     const condition = data.current.is_day
         ? info.languages[23]["day_text"]
         : info.languages[23]["night_text"];
